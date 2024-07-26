@@ -1,0 +1,122 @@
+@import "../variables/colors/colors";
+
+.navbar {
+  box-shadow: 0 10px 20px $primaryBlue;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  .container {
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbarStart {
+    padding: 1em 0;
+    transition: padding 0.3s ease;
+    .navLanguage {
+      display: flex;
+      gap: 10px; 
+      button, select {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+          background-color: #f0f0f0; 
+        }
+      }
+    }
+    .navLeft {
+      a {
+        .mainLogo {
+          width: 96px;
+        }
+      }
+    }
+    .navRight {
+      width: 50%;
+      .navbarContacts {
+        display: flex;
+        justify-content: space-between;
+        a {
+          display: flex;
+          align-items: center;
+          color: $primaryBlue;
+          font-weight: 500;
+          img {
+            margin-right: 0.25em;
+          }
+        }
+      }
+    }
+    .navHamburger {
+      display: none;
+    }
+    @media (max-width: 1200px) {
+      .navRight {
+        width: 60%;
+      }
+    }
+    @media (max-width: 1000px) {
+      .navRight {
+        display: none;
+      }
+      .navHamburger {
+        button {
+          border: none;
+          width: 64px;
+          img {
+            width: 100%;
+          }
+        }
+        display: block;
+      }
+    }
+  }
+  .navbarEnd {
+    background-color: $primaryBlue;
+    padding: 1.2em 0;
+    transition: padding 0.3s ease;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .navLinks {
+        display: flex;
+        a {
+          position: relative;
+          text-transform: capitalize;
+          color: white;
+          margin-right: 20px;
+          transition: 0.3s ease-in-out;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: 0.3s ease-in-out;
+          }
+          &:hover::before {
+            width: 100%;
+          }
+        }
+      }
+      .navLanguage {
+        cursor: pointer;
+        color: white;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 0.3em;
+      }
+    }
+  }
+}

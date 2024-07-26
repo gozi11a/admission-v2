@@ -1,0 +1,110 @@
+@import "../variables/colors/colors";
+
+#footer {
+ 
+  background-color: $primaryBlue;
+  .container {
+    .wrapper {
+      height: 500px;
+
+      .wrapper-top {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          .mainLogo {
+            width: 96px;
+          }
+        }
+        .left {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 60%;
+          .social-media{
+            display: flex;
+            // padding: 0.2rem;
+            a {
+              display: flex;
+              width: 42px;
+              align-items: center;
+              color: $primaryBlue;
+              font-weight: 500;
+              padding: 3px;
+              img {
+                margin-right: 0.25em;
+              }
+            }
+          }
+          
+          .epigraf{
+            font-size: 1.6rem;
+            color: $primaryBgcolor;
+            
+          }
+        }
+        .middle {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 50%;
+          width: 33%;
+          h2{
+            color: $primaryBgcolor;
+            font-size: 1.9rem;
+          }
+          .list-pages{
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h4{
+              font-size: 1.2rem;
+              color: $primaryBgcolor;
+            }
+        }
+        
+        }
+     
+        .right {
+          height: 50%;
+          width: 33%;
+          display: flex;
+          flex-direction: column;
+          // align-items: center;
+          justify-content: space-between;
+          h2{
+            color: $primaryBgcolor;
+            font-size: 1.9rem;
+          }
+          .contact-us {
+            display: flex;
+            flex-direction: column;
+            height: 75%;
+            a {
+              color: $primaryBgcolor;
+              font-size: 1.2rem;
+              display: flex;
+              align-items: center;
+              padding: 0.5rem;
+              img {
+                padding-right: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+      .wrapper-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3 {
+          height: 10%;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

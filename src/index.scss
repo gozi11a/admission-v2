@@ -1,0 +1,58 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// -------------- font family -----------
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+// -------------- container -----------
+ .container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+}
+
+.miniContainer {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0.8em;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+
+:root {
+  --background-color-light: #ffffff;
+  --text-color-light: #000000;
+  --background-color-dark: #333333;
+  --text-color-dark: #ffffff;
+}
+
+.light {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.dark {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}

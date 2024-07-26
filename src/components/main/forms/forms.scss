@@ -1,0 +1,49 @@
+@import "../../variables/colors/colors";
+
+.forms {
+  padding: 40px 0;
+  background-color: $primaryBgcolor;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.formsBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10em;
+}
+.bachelorLink {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.bachelorLink:hover {
+  transform: scale(1.05);
+}
+.bachelorImg {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.bachelorImg:hover {
+  box-shadow: 0 8px 16px $primaryBlue;
+}
+
+@media (max-width: 768px) {
+  .bachelorImg {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bachelorImg {
+    max-width: 150px;
+  }
+}
