@@ -1,1 +1,11 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+@import "../variables/colors/colors";
+
+body {
+  .customNavbar {
+    z-index: 100;
+    background-color: $primaryBlue !important;
+    position: fixed;
+    width: 100%;
+  }
+}
