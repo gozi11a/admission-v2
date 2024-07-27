@@ -1,9 +1,7 @@
-import React from "react";
-
+import React from 'react'
 import { FaArrowLeft } from "react-icons/fa";
 import './course.scss'
-
-export const Kunduzgi = () => {
+export const Sirtqi = () => {
   return (
     <div className="img-wrapper">
       <div className="btn-wrapper">
@@ -20,5 +18,5 @@ export const Kunduzgi = () => {
       </div>
      
     </div>
-  );
-};
+  )
+}

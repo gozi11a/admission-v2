@@ -12,7 +12,6 @@ import React from "react";
 import HttpApi from "i18next-http-backend";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import { Carousel } from "bootstrap/dist/js/bootstrap";
 import {Carusel } from "./components/main/carousel/Carusel";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Kunduzgi } from "./components/main/carousel/pages/Kunduzgi";
