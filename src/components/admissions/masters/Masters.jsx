@@ -8,7 +8,6 @@ export const Masters = () => {
     <div className="btn-wrapper">
       <button onClick={() => window.history.back()} className="back-button">
       <FaArrowLeft/>
-
       </button>
       </div>
       <script data-b24-form="inline/13/qku59r" data-skip-moving="true">
