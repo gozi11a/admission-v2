@@ -7,5 +7,31 @@ body {
     background-color: $primaryBlue !important;
     position: fixed;
     width: 100%;
+    .mainLogo {
+      width: 100px;
+    }
+    a {
+      color: #fff !important;
+    }
+    .dropdown-menu {
+      background-color: $primaryBlue !important;
+    }
+    .dropdown-item {
+      &:hover {
+        background-color: #38857a;
+      }
+    }
+    .navbar-toggler {
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+  @media (max-width: 992px) {
+    .customNavbar {
+      .container {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+    }
   }
 }
