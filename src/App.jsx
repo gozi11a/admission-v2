@@ -12,10 +12,12 @@ import React from "react";
 import HttpApi from "i18next-http-backend";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {Carusel } from "./components/main/carousel/Carusel";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carusel } from "./components/main/carousel/Carusel";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Kunduzgi } from "./components/main/carousel/pages/Kunduzgi";
 import Location from "./components/main/location/Location";
+import i18n from "./i18n";
+import { useTransition } from "react-i18next";
 
 i18n
   .use(initReactI18next)
@@ -26,7 +28,7 @@ i18n
     lng: "en",
     fallbackLng: "en",
     detection: {
-      order: [ "cookie","htmlTag", "localStorage", "path", "subdomain"],
+      order: ["cookie", "htmlTag", "localStorage", "path", "subdomain"],
       caches: ["cookie"],
     },
     backend: {
@@ -37,6 +39,7 @@ i18n
     },
   });
 function App() {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <BrowserRouter>
@@ -45,9 +48,9 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/bachelors" element={<Bachelors />} />
           <Route path="/masters" element={<Masters />} />
-          <Route path="/bakalavr" element={<Kunduzgi/>} />
+          <Route path="/bakalavr" element={<Kunduzgi />} />
         </Routes>
-        <Carusel/>
+        <Carusel />
         <Location />
 
         <Footer />
