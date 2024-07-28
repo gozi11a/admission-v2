@@ -15,6 +15,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {Carusel } from "./components/main/carousel/Carusel";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Kunduzgi } from "./components/main/carousel/pages/Kunduzgi";
+import Location from "./components/main/location/Location";
 
 i18n
   .use(initReactI18next)
@@ -47,6 +48,8 @@ function App() {
           <Route path="/bakalavr" element={<Kunduzgi/>} />
         </Routes>
         <Carusel/>
+        <Location />
+
         <Footer />
       </BrowserRouter>
     </>

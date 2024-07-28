@@ -1,6 +1,5 @@
 import React from "react";
 import "./location.scss";
-
 function Location() {
   return (
     <section id="locations" className="locations">

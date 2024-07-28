@@ -1,32 +1,8 @@
-// import React from "react";
-// import "./forms.scss";
-
-// function Forms() {
-//   return (
-//     <section className="forms">
-//       <div className="container">
-//         <div className="formsBox">
-//           <a href="/bachelors" className="bachelorLink">
-//             <img
-//               className="bachelorImg"
-//               src="https://www.degreequery.com/wp-content/uploads/2019/02/BachelorsIcon-1024x1024.png"
-//               alt="bakalavr"
-//             />
-//           </a>
-//           <a href="/masters" className="bachelorLink">
-//             <img className="bachelorImg" src="https://accounting.utdallas.edu/files/2021/02/masters-degree-icon.png" alt="Magistr" />
-//           </a>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default Forms;
-
 import React from "react";
 import "./forms.scss";
 import { Link } from "react-router-dom";
+import bachelor from '../../../assets/img/bachelor2.jpg';
+import master from '../../../assets/img/master.jpg';
 
 function Forms() {
   document.querySelectorAll('.dropdown-item').forEach(item => {
@@ -45,14 +21,14 @@ function Forms() {
           <Link to="/bachelors" className="bachelorLink">
             <img
               className="bachelorImg"
-              src="https://www.degreequery.com/wp-content/uploads/2019/02/BachelorsIcon-1024x1024.png"
+              src={bachelor}
               alt="bakalavr"
             />
           </Link>
           <Link to="/masters" className="bachelorLink">
             <img
               className="bachelorImg"
-              src="https://accounting.utdallas.edu/files/2021/02/masters-degree-icon.png"
+              src={master}
               alt="Magistr"
             />
           </Link>
