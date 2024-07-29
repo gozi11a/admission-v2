@@ -1,5 +1,5 @@
 import React from "react";
-// import backSvg from "/src/assets/icons/back.svg";
+
 import "./bachelors.scss";
 import { FaArrowLeft } from "react-icons/fa";
 
@@ -11,7 +11,7 @@ export const Bachelors = () => {
         <button onClick={() => window.history.back()} className="back-button">
         <FaArrowLeft/>
         </button>
-      </div>
+      </div>  
       <script data-b24-form="inline/12/xiawh8" data-skip-moving="true">
         $
         {(function (w, d, u) {

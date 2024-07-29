@@ -21,13 +21,32 @@
   text-align: center;
   margin: 20px;
   transition: transform 0.3s ease-in-out;
+  text-decoration-line: none;
+  .imgTitle {
+    display: flex;
+    flex-direction: column;
+    span{
+      padding-top: 0.5em;
+      color: $primaryBlue;
+      font-size: 2em;
+      font-weight: 700;
+      transition: background-color 0.8s ease, transform 0.8s ease;
+    }
+  }
 }
 .bachelorLink:hover {
   transform: scale(1.05);
+      text-decoration-line: none;
+      span:hover{
+      color: $primaryBlue;
+      font-weight: 800;
+  transform: scale(1.55); 
+      }
+     
 }
 .bachelorImg {
   width: 100%;
-  max-width: 350px;
+  max-width: 550px;
   height: auto;
   object-fit: cover;
   transition: box-shadow 0.3s ease-in-out;

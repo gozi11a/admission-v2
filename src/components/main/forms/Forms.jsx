@@ -1,8 +1,8 @@
 import React from "react";
 import "./forms.scss";
 import { Link } from "react-router-dom";
-import bachelor from '../../../assets/img/bachelor2.jpg';
-import master from '../../../assets/img/master.jpg';
+import bachelor from '../../../assets/img/bakalavr.webp';
+import master from '../../../assets/img/magister.webp';
 
 function Forms() {
   document.querySelectorAll('.dropdown-item').forEach(item => {
@@ -19,18 +19,24 @@ function Forms() {
       <div className="container">
         <div className="formsBox">
           <Link to="/bachelors" className="bachelorLink">
-            <img
+           <div className="imgTitle">
+           <img
               className="bachelorImg"
               src={bachelor}
               alt="bakalavr"
             />
+      <span>Bakalavr</span>
+           </div>
           </Link>
           <Link to="/masters" className="bachelorLink">
+            <div className="imgTitle">
             <img
               className="bachelorImg"
               src={master}
               alt="Magistr"
             />
+      <span>Magister</span>
+            </div>
           </Link>
         </div>
       </div>
