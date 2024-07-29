@@ -4,10 +4,8 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import MainLogo from "/src/assets/logo/LogoWhite.png";
 import "./navbar.scss";
-import { useTranslation } from "react-i18next";
 
 function BasicExample() {
-  const { tr } = useTranslation();
   return (
     <Navbar expand="lg" className="bg-body-tertiary customNavbar">
       <Container>
@@ -17,7 +15,7 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">{tr("navlink1")}UY</Nav.Link>
+            <Nav.Link href="#home">UY</Nav.Link>
             <Nav.Link href="#link">About</Nav.Link>
             <Nav.Link href="#link">Contact</Nav.Link>
             <Nav.Link href="#link">Support</Nav.Link>
