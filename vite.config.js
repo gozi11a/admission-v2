@@ -9,5 +9,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
-  assetsInclude: ['**/*.JPG', '**/*.jpg'] // Bu yerda rasm formatlarini qo'shing
+  assetsInclude: ['**/*.JPG', '**/*.jpg'] 
 });
