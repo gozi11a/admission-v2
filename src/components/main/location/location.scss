@@ -1,6 +1,9 @@
 @import "../../variables/colors/colors";
+
 .locations {
-//   padding: 2em 0;
+
+  display: flex;
+  align-items: center;
 
   .container {
     .locationBox {
@@ -9,8 +12,9 @@
       gap: 20px;
       justify-content: space-around;
       padding: 20px;
-  }
-  .location {
+    }
+
+    .location {
       flex: 1 1 45%;
       max-width: 45%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -18,26 +22,68 @@
       overflow: hidden;
       background-color: #fff;
       transition: transform 0.2s;
-      border: .9px solid $primaryBlue;
+      border: 0.9px solid $primaryBlue;
+    }
 
-  }
-  .location h4 {
+    .location h4 {
       text-align: center;
       margin: 10px 0;
       font-family: Arial, sans-serif;
-  }
-  .location iframe {
+    }
+
+    .location iframe {
       width: 100%;
-      
-  }
-  .location:hover {
+    }
+
+    .location:hover {
       transform: scale(1.05);
-  }
-  @media (max-width: 768px) {
-      .location {
-          flex: 1 1 100%;
-          max-width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+      .locationBox {
+        gap: 15px;
+        padding: 35px;
       }
-  }
+      .location {
+        flex: 1 1 48%;
+        max-width: 48%;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .locationBox {
+        gap: 40px;
+        padding: 20px;
+      }
+      .location {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .locationBox {
+        gap: 25px;
+        padding: 50px;
+      }
+      .location {
+        flex: 1 1 100%;
+        max-width: 100%;
+        // max-height: 500px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .locationBox {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+      }
+      .location {
+        flex: 1 1 80%;
+        max-height: 380px;
+        max-width: 100%;
+      }
+    }
   }
 }
