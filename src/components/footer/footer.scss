@@ -16,7 +16,8 @@
 
         a {
           .mainLogo {
-            width: 96px;
+            width: 200px;
+            height: auto;
             margin-bottom: 1rem;
           }
         }
@@ -183,12 +184,18 @@
   }
 
   @media (max-width: 768px) {
+    .wrapper-bottom{
+      height: 50%;
+    }
+    .container{
+      flex-direction: row;
+    }
     .container .wrapper {
       .wrapper-top {
-        flex-direction: column;
-        align-items: flex-start;
-
-        .left,
+      height: 60%;
+       
+ 
+     .left,
         .middle,
         .right {
           width: 100%;
